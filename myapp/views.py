@@ -23,11 +23,7 @@ def camera_live(request):
 
 class Camera(View):
     template_name = 'camera.html'
-    word = 'ได้เขียน django แล้ว'
 
     def get(self, request):
-        context = {
-            'data': self.word
-        }
         return render(request, self.template_name, context)
 
