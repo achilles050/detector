@@ -25,5 +25,5 @@ class Camera(View):
     template_name = 'camera.html'
 
     def get(self, request):
-        return render(request, self.template_name, context)
+        return render(request, self.template_name)
 
