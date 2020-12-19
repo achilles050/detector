@@ -22,7 +22,7 @@ with open("model_ml/outfile", "rb") as fp:
 
 class VideoCamera(object):
     def __init__(self):
-        self.cap = cv2.VideoCapture(-1)
+        self.cap = cv2.VideoCapture(1)
 
     def __del__(self):
         self.cap.release()
