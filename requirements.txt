@@ -9,7 +9,6 @@ gunicorn==20.0.4
 mypy-extensions==0.4.3
 numpy==1.18.5
 opencv-python==4.4.0.46
-python==3.8.6
 pathspec==0.8.1
 psycopg2==2.8.6
 pycodestyle==2.6.0
