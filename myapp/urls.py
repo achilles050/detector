@@ -1,5 +1,7 @@
 from django.urls import path
 from . import views
+from .views import camera_live
+
 
 urlpatterns = [
     path('', views.Camera.as_view(), name='camera'),
