@@ -8,8 +8,9 @@ def LoR_create_Xb(X):
     Xb = np.hstack([ones, X])
     return Xb
 
-def predict(X, W): #LoR_find_Yhat_mul_class
+
+def predict(X, W):  # LoR_find_Yhat_mul_class
     Xb = LoR_create_Xb(X)
     Z = np.dot(Xb, W)
-    Yhat = np.exp(Z)/np.exp(Z).sum(axis=1, keepdims = True)
+    Yhat = np.exp(Z) / np.exp(Z).sum(axis=1, keepdims=True)
     return Yhat
