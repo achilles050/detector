@@ -14,6 +14,7 @@ def gen(camera):
                 b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
         except:
             pass
+    
 
 def camera_live(request):
     try:

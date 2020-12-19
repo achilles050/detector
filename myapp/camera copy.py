@@ -25,8 +25,8 @@ class VideoCamera(object):
         self.cap.release()
 
     def get_frame(self):
-        # self.cap = self.cap.set(3, 1280)
-        # self.cap = self.cap.set(4, 720)
+        self.cap = self.cap.set(3, 1280)
+        self.cap = self.cap.set(4, 720)
         ret, frame = self.cap.read()
         frame = cv2.flip(frame, 1)
         (h, w) = frame.shape[:2]
